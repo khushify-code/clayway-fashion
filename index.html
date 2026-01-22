@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendVibe Studio - Fashion & Lifestyle Blog</title>
+    <meta property="og:title" content="TrendVibe Studio - Fashion & Lifestyle">
+    <meta property="og:description" content="Latest fashion trends, styling tips, lifestyle inspiration">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/FF6B9D/FFFFFF?text=TrendVibe+Studio">
+    
+    <!-- Pinterest Rich Pins Meta Tags -->
+    <meta itemprop="name" content="TrendVibe Studio">
+    <meta itemprop="description" content="Your go-to source for fashion trends and lifestyle inspiration">
+    <link rel="canonical" href="https://yourdomain.com">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            overflow-x: hidden;
+        }
+        .hero { 
+            background: linear-gradient(135deg, #FF6B9D 0%, #C44569 50%, #A55EAA 100%);
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            color: white;
+            position: relative;
+        }
+        .hero-content h1 { 
+            font-size: clamp(3rem, 8vw, 6rem); 
+            margin-bottom: 1rem; 
+            font-weight: 700;
+        }
+        .hero-content p { 
+            font-size: 1.5rem; 
+            max-width: 600px; 
+            margin: 0 auto 2rem;
+        }
+        .cta-button { 
+            background: #FFD93D; 
+            color: #333; 
+            padding: 1rem 2.5rem; 
+            border: none; 
+            border-radius: 50px; 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,217,61,0.4); }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .section { padding: 5rem 0; }
+        .section-title { 
+            text-align: center; 
+            font-size: 3rem; 
+            margin-bottom: 3rem; 
+            background: linear-gradient(135deg, #FF6B9D, #A55EAA); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .featured-posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .post-card { 
+            background: white; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .post-card:hover { transform: translateY(-10px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+        .post-image { 
+            height: 250px; 
+            background: linear-gradient(45deg, #FF9A9E, #FECFEF); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 1.2rem; 
+            color: #666;
+        }
+        .post-content { padding: 2rem; }
+        .post-title { font-size: 1.5rem; margin-bottom: 1rem; color: #333; }
+        .post-meta { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+        .affiliate-badge { 
+            background: #FFD93D; 
+            color: #333; 
+            padding: 0.3rem 0.8rem; 
+            border-radius: 20px; 
+            font-size: 0.8rem; 
+            font-weight: 600;
+        }
+        
+        .pinterest-section { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            text-align: center;
+        }
+        .pin-it-button { 
+            background: #E60023; 
+            color: white; 
+            padding: 0.8rem 2rem; 
+            border: none; 
+            border-radius: 25px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            margin: 1rem;
+        }
+        
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .product-card { text-align: center; }
+        .product-image { height: 300px; background: #f8f9fa; border-radius: 15px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; }
+        .product-price { font-size: 1.5rem; font-weight: 700; color: #FF6B9D; }
+        
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 3rem 0; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section - Perfect for Pinterest Tall Images -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TrendVibe Studio</h1>
+            <p>Latest fashion trends, styling inspiration, and lifestyle essentials for the modern woman</p>
+            <a href="#featured" class="cta-button">Shop Latest Trends</a>
+        </div>
+    </section>
+
+    <!-- Featured Posts - Pinterest Traffic Goldmine -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Looks</h2>
+            <div class="featured-posts">
+                <article class="post-card">
+                    <div class="post-image" style="background: linear-gradient(45deg, #FF9A9E, #FECFEF);">10 Spring Outfit Ideas Under ₹3000</div>
+                    <div class="post-content">
+                        <h3 class="post-title">10 Spring Outfit Ideas Under ₹3000</h3>
+                        <div class="post-meta">March 15, 2026 • 12 min read</div>
+                        <span class="affiliate-badge">Amazon Affiliate</span>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-image" style="background: linear-gradient(45deg, #A8E6CF, #88D8A3);">Best Dupes for Designer Handbags</div>
+                    <div class="post-content">
+                        <h3 class="post-title">Best Dupes for Designer Handbags</h3>
+                        <div class="post-meta">March 10, 2026 • 8 min read</div>
+                        <span class="affiliate-badge">Myntra Affiliate</span>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-image" style="background: linear-gradient(45deg, #FFEAA7, #FDCB6E);">5 Minimalist Wardrobe Essentials</div>
+                    <div class="post-content">
+                        <h3 class="post-title">5 Minimalist Wardrobe Essentials</h3>
+                        <div class="post-meta">March 5, 2026 • 10 min read</div>
+                        <span class="affiliate-badge">AJIO Affiliate</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section - E-commerce Ready -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #FF6B9D, #C44569);">Statement Earrings</div>
+                    <div>₹899 <span style="text-decoration: line-through; color: #999;">₹1499</span></div>
+                    <div class="product-price">₹899</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #A55EAA, #667EEA);">Chunky Sneakers</div>
+                    <div class="product-price">₹2,499</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pinterest Integration Section -->
+    <section class="pinterest-section section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Ready to Pin? 🚀</h2>
+            <p style="font-size: 1.3rem; max-width: 600px; margin: 0 auto 2rem;">
+                Every section above is Pinterest-optimized. Create tall pins (1000x1500px) from these images!
+            </p>
+            <button class="pin-it-button">Pin This Look</button>
+            <button class="pin-it-button">Save Outfit Idea</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TrendVibe Studio. Fashion with purpose. | Made for Pinterest success 📌</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
